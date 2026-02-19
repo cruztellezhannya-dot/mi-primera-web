@@ -79,8 +79,7 @@ biblioteca = {
     "Feliz ☀️": ["https://open.spotify.com/track/60SdxuYpZpYvYf9P9S0pbu", "Happy - Pharrell"],
     "Triste 🌧️": ["https://open.spotify.com/track/1Z1lsTbsS479m9vCAsDaeY", "Someone Like You - Adele"],
     "Productiva/Estudiando 💻": ["https://open.spotify.com/track/5uCax9HTlsidG46vMv3vdf", "Lofi Hip Hop - Chill Beats"],
-    "Modo Fiesta 🔥": ["https://open.spotify.com/track/27SdWb2r9j7V6lUvjqv0XQ", "Danza Kuduro - Don Omar"]
-}
+    "Modo Fiesta 🔥": ["https://www.youtube.com/watch?v=7zp1TbLFPp8", "Danza Kuduro - Don Omar"]
 
 # 2. Le preguntamos al usuario cómo se siente
 estado = st.selectbox("¿Cómo va tu mood hoy?", list(biblioteca.keys()))
