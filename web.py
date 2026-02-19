@@ -70,3 +70,23 @@ with col2:
 
 with col3:
     st.warning("Nivel: Aprendiz ⭐")
+
+st.divider()
+st.subheader("🎧 Tu DJ Personal de IA")
+
+# 1. Creamos la base de datos de canciones (esto es un Diccionario)
+biblioteca = {
+    "Feliz ☀️": ["https://open.spotify.com/track/60SdxuYpZpYvYf9P9S0pbu", "Happy - Pharrell"],
+    "Triste 🌧️": ["https://open.spotify.com/track/1Z1lsTbsS479m9vCAsDaeY", "Someone Like You - Adele"],
+    "Productiva/Estudiando 💻": ["https://open.spotify.com/track/5uCax9HTlsidG46vMv3vdf", "Lofi Hip Hop - Chill Beats"],
+    "Modo Fiesta 🔥": ["https://open.spotify.com/track/27SdWb2r9j7V6lUvjqv0XQ", "Danza Kuduro - Don Omar"]
+}
+
+# 2. Le preguntamos al usuario cómo se siente
+estado = st.selectbox("¿Cómo va tu mood hoy?", list(biblioteca.keys()))
+
+# 3. La lógica mágica
+if st.button("Recomiéndame una rola"):
+    cancion_info = biblioteca[estado]
+    st.success(f"Te recomiendo escuchar: **{cancion_info[1]}**")
+    st.video(cancion_info[0]) # Esto intentará mostrar el reproductor 
